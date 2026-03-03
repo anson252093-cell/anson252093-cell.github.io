@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.container {
+            display: flex;
+            /*往上面拍去下面*/
+            flex-direction: column;
+            /*horizontal alignment*/
+            justify-content: space-around;
+            /*vertically alignment*/
+            align-items: flex-start;
+            /*Distance*/
+            gap: 10px;
+            min-height: 300px;
+            background: linear-gradient(to right, rgb(243, 149, 149), rgb(146, 146, 248));
+            padding: 20px;
+            background-image: url(images/cloud.jpg);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div>
+
+</body>
+
+</html>
