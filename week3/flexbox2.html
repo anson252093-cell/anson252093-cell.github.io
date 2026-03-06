@@ -31,8 +31,9 @@
             align-items: center;
         }
 
-        div.request {
+        button.request {
             color: black;
+            background-color: white;
             border: 1px solid black;
             border-radius: 3px;
             padding: 10px;
@@ -41,6 +42,7 @@
 
         div.body_container {
             font-size: 40px;
+            padding: 0px 20px 0px 20px;
         }
 
         p {
@@ -53,6 +55,29 @@
             justify-content: space-between;
             align-items: center;
 
+        }
+
+        div.para {
+            word-wrap: break-word;
+        }
+
+        button.book {
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 20px;
+
+        }
+
+        div.footer {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            padding: 0px 20px 0px 20px;
+            max-width: 100%;
         }
     </style>
 </head>
@@ -70,7 +95,7 @@
             <div>Use Cases</div>
             <div>Pricing</div>
             <div>Blog</div>
-            <div class="request">Request a quote</div>
+            <div><button class="request">Request a quote</button></div>
         </div>
     </div>
 
@@ -80,10 +105,24 @@
             <p>Our digital marketing agency helps businesses<br> grow and succeed online through a range of<br> services
                 including
                 SEO, PPC, social media marketing,<br> and content creation.</p>
-            <p>Book a consultation</p>
+            <p>
+                <button class="book">Book a consultation</button>
+            </p>
         </div>
         <img src="images/illustration.png" alt="Illustration" width="50%">
     </div>
+
+    <div class="footer">
+        <div><img src="images/amazon.png" alt="Logo" width="100%"></div>
+        <div><img src="images/dribbles.png" alt="Logo" width="100%"></div>
+        <div><img src="images/hubsript.png" alt="Logo" width="100%"></div>
+        <div><img src="images/notion.png" alt="Logo" width="100%"></div>
+        <div><img src="images/netflix.png" alt="Logo" width="100%"></div>
+        <div><img src="images/zoom.png" alt="Logo" width="100%"></div>
+    </div>
+
+
+
 
 
 </body>
