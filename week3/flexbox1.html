@@ -8,16 +8,22 @@
     <style>
         body {
             background-color: rgb(246, 245, 239);
+            font-family: Arial, Helvetica, sans-serif;
+
         }
 
         div.container {
             display: flex;
             /*往上面拍去下面*/
-            justify-content: space-around;
+            justify-content: space-evenly;
             /*vertically alignment*/
             align-items: flex-start;
             /*Distance*/
             gap: 10px;
+            padding: 20px;
+            word-wrap: break-word;
+
+
         }
 
         div.building {
@@ -26,7 +32,24 @@
             background-color: white;
             border: 1px solid none;
             border-radius: 10px;
-            padding: 10px;
+            padding: 20px;
+            max-width: 400px;
+            align-items: center;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        div.word {
+            margin: 20px 10px 20px 10px;
+            letter-spacing: normal;
+
+        }
+
+        p {
+            font-weight: 100;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -34,13 +57,26 @@
 <body>
     <div class="container">
         <div class="building"><img src="images/pic1.jpg" alt="Image 1" width="100%">
-            <h1>Residential Project</h1>Residential Project
+
+            <div class="word">
+                <h1>Residential Project</h1>
+                <p>We build sustainable and modern homes for comfortable living.</p>
+            </div>
+
         </div>
         <div class="building"><img src="images/pic2.jpg" alt="Image 2" width="100%">
-            <h1>Commercial spaces</h1>
+
+            <div class="word">
+                <h1>Commercial spaces</h1>
+                <p>We create efficient, inspiring workspaces for businesses of all sizes.</p>
+            </div>
         </div>
         <div class="building"><img src="images/pic3.jpg" alt="Image 3" width="100%">
-            <h1>Infrastructure works</h1>
+
+            <div class="word">
+                <h1>Infrastructure works</h1>
+                <p>We develop strong, reliable infrastructure for growing businesses.</p>
+            </div>
         </div>
     </div>
 
