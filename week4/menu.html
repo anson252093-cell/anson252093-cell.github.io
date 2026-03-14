@@ -8,29 +8,106 @@
 </head>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+    body {
+        font-family: "Oxygen", Arial, sans-serif;
+    }
+
     div.header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 10px 70px 10px 70px;
     }
+
+
 
     div.menubar {
         display: flex;
+        justify-content: center;
+        gap: 30px;
+        font-weight: 550;
+    }
+
+    div.call {
+        display: flex;
+        justify-content: center;
         align-items: center;
+        gap: 20px;
+
+    }
+
+    h2 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    div.service {
+        color: rgb(249, 97, 43)
+    }
+
+    button {
+        color: white;
+        background-color: rgb(249, 97, 43);
+        padding: 13px 18px 13px 18px;
+        border-radius: 8px;
+        border: none
+    }
+
+    img.iphone {
+        width: 30px;
+    }
+
+    img.ham {
+        width: 30px;
+        display: none;
+    }
+
+    @media screen and (max-width: 1280px) {
+        div.menubar {
+            display: none;
+        }
+
+        button {
+            display: none;
+        }
+
+        img.ham {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        img.iphone {
+            display: none;
+        }
+
+        h2 {
+            display: none;
+        }
     }
 </style>
 
 <body>
     <div class="header">
         <div class="logo">
-            <img src="images/elementra.png" alt="logo" width="100%">
+            <img src="images/elementra.png" alt="logo" width="190px">
         </div>
         <div class="menubar">
             <div>Home</div>
-            <div>Service</div>
+            <div class="service">Service</div>
             <div>Work</div>
             <div>Project Details</div>
             <div>Contact</div>
         </div>
+        <div class="call">
+            <img class="iphone" src="images/phone.png" alt="call" width="100%">
+            <h2>555-123-4567</h2>
+            <button>Contact</button>
+            <img class="ham" src="images/Burger-bar.png" alt="menu_bar" width="100%">
+        </div>
+
     </div>
 </body>
 
