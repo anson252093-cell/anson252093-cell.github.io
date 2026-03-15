@@ -100,6 +100,7 @@
 
         div.service {
             display: flex;
+            align-items: center;
         }
 
         h2.serv {
@@ -107,6 +108,12 @@
             border-radius: 7px;
             color: black;
             padding: 0px 7px 0px 7px;
+            font-size: 40px;
+        }
+
+        p.serviceinfo {
+            font-size: 18px;
+            padding: 40px;
         }
 
         div.content1 {
@@ -114,12 +121,12 @@
             justify-content: space-between;
             gap: 40px;
             margin: auto;
-            max-width: 1280px;
+            padding: 20px 0px 20px 10px;
             align-items: center;
 
         }
 
-        div.contentborder {
+        div.contentborder1 {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -129,8 +136,39 @@
             padding: 50px;
             width: 100%;
             gap: 95px;
+            background-color: rgb(243, 243, 243);
+            box-shadow: 0px 5px;
+        }
+
+        div.contentborder2 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: solid;
+            border-radius: 45px;
+            border: 1px solid black;
+            padding: 50px;
+            width: 100%;
+            gap: 95px;
+            background-color: rgb(185, 255, 102);
+            box-shadow: 0px 5px;
 
         }
+
+        div.contentborder3 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: solid;
+            border-radius: 45px;
+            border: 1px solid black;
+            padding: 50px;
+            width: 100%;
+            gap: 95px;
+            background-color: rgb(25, 26, 35);
+            box-shadow: 0px 5px;
+        }
+
 
         h3 {
             align-items: center;
@@ -154,8 +192,46 @@
             display: flex;
         }
 
-        span {
-            padding-left: 15px;
+
+
+        span.green {
+            background-color: rgb(185, 255, 102);
+            border-radius: 7px;
+            color: black;
+            padding: 0px 7px 0px 7px;
+        }
+
+        span.white {
+            background-color: white;
+            border-radius: 7px;
+            padding: 0px 7px 0px 7px;
+        }
+
+        p.learn {
+            padding: 15px;
+            font-weight: 400;
+
+        }
+
+        p.learnw {
+            color: white;
+            padding: 15px;
+            font-weight: 400;
+        }
+
+        div.letmake_container {
+            border-radius: 45px;
+            background-color: rgb(243, 243, 243);
+            padding: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        div.letmake {
+            width: 50%;
+            justify-content: center;
+
+
         }
     </style>
 </head>
@@ -207,7 +283,9 @@
         <div class="servicepart">
             <h2 class="serv">Service</h2>
         </div>
-        <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed
+        <p class="serviceinfo">At our digital marketing agency, we offer a range of services to<br> help businesses grow
+            and
+            succeed
             online. These services include:</p>
     </div>
 
@@ -217,14 +295,14 @@
     <div class="content1">
 
         <div class="contentbody">
-            <div class="contentborder">
+            <div class="contentborder1">
                 <div class="contentpara">
-                    <h3 class="green">
-                        Search engine optimization
-
+                    <h3>
+                        <span class="green">Search engine</span><br><span class="green">optimization</span>
                     </h3>
                     <div class="arror">
-                        <img src="images/arrow.png" alt="Enter" width="41px"><span>Learn more</span>
+                        <img src="images/arrow.png" alt="Enter" width="41px">
+                        <p class="learn">Learn more</p>
 
                     </div>
                 </div>
@@ -234,13 +312,14 @@
             </div>
         </div>
         <div class="contentbody">
-            <div class="contentborder">
+            <div class="contentborder2">
                 <div class="contentpara">
-                    <h3 class="grey">
-                        Pay-per-click advertising
+                    <h3><span class="white">Pay-per-click</span><br>
+                        <span class="white">advertising</span>
                     </h3>
                     <div class="arror">
-                        <img src="images/arrow.png" alt="Enter" width="41px"><span>Learn more</span>
+                        <img src="images/arrow.png" alt="Enter" width="41px">
+                        <p class="learn">Learn more</p>
 
                     </div>
 
@@ -254,13 +333,14 @@
     <div class="content1">
 
         <div class="contentbody">
-            <div class="contentborder">
+            <div class="contentborder3">
                 <div class="contentpara">
-                    <h3>
-                        Social Media Marketing
+                    <h3><span class="white">Social Media</span><br><span class="white">Marketing</span>
+
                     </h3>
                     <div class="arror">
-                        <img src="images/arrow.png" alt="Enter" width="41px"><span>Learn more</span>
+                        <img src="images/whitearrow.png" alt="Enter" width="41px">
+                        <p class="learnw">Learn more</p>
 
                     </div>
                 </div>
@@ -270,13 +350,14 @@
             </div>
         </div>
         <div class="contentbody">
-            <div class="contentborder">
+            <div class="contentborder1">
                 <div class="contentpara">
-                    <h3>
-                        Email Marketing
+                    <h3><span class="green">Email</span><br><span class="green">Marketing</span>
+
                     </h3>
                     <div class="arror">
-                        <img src="images/arrow.png" alt="Enter" width="41px"><span>Learn more</span>
+                        <img src="images/arrow.png" alt="Enter" width="41px">
+                        <p class="learn">Learn more</p>
 
                     </div>
 
@@ -290,13 +371,14 @@
     <div class="content1">
 
         <div class="contentbody">
-            <div class="contentborder">
+            <div class="contentborder2">
                 <div class="contentpara">
-                    <h3>
-                        Content Creation
+                    <h3><span class="white">Content</span><br><span class="white">Creation</span>
+
                     </h3>
                     <div class="arror">
-                        <img src="images/arrow.png" alt="Enter" width="41px"><span>Learn more</span>
+                        <img src="images/arrow.png" alt="Enter" width="41px">
+                        <p class="learn">Learn more</p>
 
                     </div>
                 </div>
@@ -306,13 +388,14 @@
             </div>
         </div>
         <div class="contentbody">
-            <div class="contentborder">
+            <div class="contentborder3">
                 <div class="contentpara">
-                    <h3>
-                        Anlytics and Tracking
+                    <h3><span class="green">Anlytics and</span> <span class="green">Tracking</span>
+
                     </h3>
                     <div class="arror">
-                        <img src="images/arrow.png" alt="Enter" width="41px"><span>Learn more</span>
+                        <img src="images/whitearrow.png" alt="Enter" width="41px">
+                        <p class="learnw">Learn more</p>
 
                     </div>
 
@@ -324,6 +407,16 @@
         </div>
     </div>
 
+    <div class="letmake_container">
+        <div class="letmake">
+            <h3>Let's make things happen</h3>
+            <p class="contactus">Contact us today to learn more about how our digital<br>
+                marketing services can help your business grow and<br>succeed online.</p>
+            <p><button class="book">Get your free proposal</button></p>
+        </div>
+        <div class="letmakeill"><img src="images/smile.png" alt="icon" width="100%">
+        </div>
+    </div>
 
 
 </body>
