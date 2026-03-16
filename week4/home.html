@@ -29,6 +29,10 @@
             align-items: center;
         }
 
+        img.hamburgerbar {
+            display: none;
+        }
+
         div.menu_container {
             display: flex;
             gap: 60px;
@@ -93,6 +97,7 @@
             display: none;
             font-size: 40px;
         }
+
 
         div.illustration {
             width: 50%;
@@ -230,8 +235,60 @@
         div.letmake {
             width: 50%;
             justify-content: center;
+        }
+
+        @media screen and (max-width: 1380px) {
+            img.hamburgerbar {
+                display: block;
+            }
 
 
+            div.menu_container {
+                display: none;
+
+            }
+
+            div.content1 {
+                margin: auto;
+                width: 60%;
+                display: flex;
+                flex-wrap: wrap;
+
+
+            }
+
+            div.contentbody {
+                margin: auto;
+                width: 60%;
+                display: flex;
+                flex-wrap: wrap;
+
+
+
+            }
+
+            body {
+                padding: 10px;
+            }
+
+            @media screen and (max-width: 900px) {
+                div.body_container {
+
+                    flex-direction: column-reverse;
+                }
+
+                div.footer {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 15px;
+                }
+
+                div.service {
+                    flex-direction: column;
+                }
+
+
+            }
         }
     </style>
 </head>
@@ -251,7 +308,7 @@
             <div>Blog</div>
             <div><button class="request">Request a quote</button></div>
         </div>
-        <p class="menubar">☰</p>
+        <img class="hamburgerbar" src="images/Burger-bar.png" alt="menubar" width="50px">
     </div>
 
     <div class="body_container">
