@@ -7,10 +7,14 @@
     <title>Document</title>
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
     body {
         margin: 0px;
         background-color: aqua;
         color: rgb(11, 45, 114);
+        background-image: url(images/background3.jpeg);
+        font-family: "Roboto";
     }
 
     div.header {
@@ -49,14 +53,12 @@
         align-items: center;
         gap: 40px;
 
-
-
     }
 
     div.exercisebox {
         display: flex;
 
-        background-color: rgb(246, 231, 188);
+        background-color: rgba(246, 231, 188, 0.721);
         padding: 20px 80px;
         gap: 10px;
         align-items: center;
@@ -89,7 +91,7 @@
     div.bigexebox {
         display: flex;
         align-items: center;
-        background-color: rgb(246, 231, 188);
+        background-color: rgba(246, 231, 188, 0.721);
         padding: 20px;
         gap: 10px;
         flex-direction: column;
@@ -99,6 +101,28 @@
     div.bigboxbor {
         display: flex;
         align-items: center;
+        border-bottom: 1px solid;
+        padding: 0px 500px;
+    }
+
+    div.footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(9, 146, 194);
+        padding: 30px 0px 0px 0px;
+        margin: auto;
+
+
+    }
+
+    h2 {
+        padding-left: 10px;
+    }
+
+    div.socialfoot {
+        gap: 10px;
     }
 </style>
 
@@ -120,7 +144,7 @@
             <img class="propic" src="images/profilepic.jpeg" alt="Profile Pic" width="100px">
             <h2>Anson Lim</h2>
             <h3>Web Publishing</h3>
-            <p>Hello! I'm Anson Lim, a design student. i love .... Welcome to my personal</p>
+            <p>Hello! I'm Anson Lim, an art student. I love drawing illustrations. Welcome to my personal portfolio.</p>
         </div>
     </div>
 </body>
@@ -169,7 +193,16 @@
         </div>
     </div>
 </div>
-
+<div class="footer">
+    <div class="socialfoot">
+        <img src="images/facebook.png" alt="Facebook" width="30px">
+        <img src="images/whatsapp.png" alt="WhatsApp" width="30px">
+        <img src="images/instagram.png" alt="Instagram" width="30px">
+    </div>
+    <div class="footword">
+        <p>@ 2024 Anson Lim. All rights reserved.</p>
+    </div>
+</div>
 
 
 
