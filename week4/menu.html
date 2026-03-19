@@ -60,6 +60,12 @@
         img.ham {
             width: 30px;
             display: none;
+
+        }
+
+        div.number {
+            font-size: 15px;
+            font-weight: 900;
         }
 
         @media screen and (max-width: 1280px) {
@@ -81,7 +87,7 @@
                 display: none;
             }
 
-            h2 {
+            div.number {
                 display: none;
             }
         }
@@ -103,10 +109,10 @@
             <div>Contact</div>
         </div>
         <div class="call">
-            <img class="iphone" src="images/phone.png" alt="call" width="100%">
-            <h2>555-123-4567</h2>
-            <button>Contact</button>
-            <img class="ham" src="images/Burger-bar.png" alt="menu_bar" width="100%">
+            <div><img class="iphone" src="images/phone.png" alt="call" width="30px"></div>
+            <div class="number">555-123-4567</div>
+            <div><button>Contact</button></div>
+            <div><img class="ham" src="images/Burger-bar.png" alt="menu_bar" width="30px"></div>
         </div>
 
     </div>
