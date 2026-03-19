@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Own Profile</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            margin: 0px;
+            background-color: aqua;
+            color: rgb(11, 45, 114);
+            background-image: url(images/background3.jpeg);
+            font-family: "Roboto";
+        }
+
+        div.header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(9, 146, 194);
+            padding: 10px 20px 10px 20px;
+        }
+
+        div.logo {
+            display: flex;
+        }
+
+        div.headmedia {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        div.profilepic {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        img.propic {
+            border-radius: 100px;
+            padding: 30px;
+        }
+
+        div.exercisecontainer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        div.exercisebox {
+            display: flex;
+            background-color: rgba(246, 231, 188, 0.721);
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            width: 32%;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        div.exercisebox2 {
+            display: flex;
+            background-color: rgba(246, 231, 188, 0.721);
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            width: 100%;
+            margin: 20px;
+            padding: 10px;
+        }
+
+
+        div.exercisecontent {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid;
+            padding: 15px 90px;
+            gap: 10px;
+        }
+
+        img.calander {
+            max-width: 30px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        div.wkbox {
+            padding: 52px;
+            align-items: center;
+        }
+
+        div.bigexebox {
+            display: flex;
+            align-items: center;
+            background-color: rgba(246, 231, 188, 0.721);
+            padding: 20px;
+            gap: 10px;
+            flex-direction: column;
+            border-radius: 20px;
+        }
+
+        div.bigboxbor {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid;
+            padding: 0px 500px;
+        }
+
+        div.footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(9, 146, 194);
+            padding: 30px 0px 0px 0px;
+            margin: auto;
+        }
+
+        h2 {
+            padding-left: 10px;
+        }
+
+        div.socialfoot {
+            gap: 10px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            div.exercisecontainer {
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            div.exercisebox {
+                width: 90%;
+            }
+
+            div.exercisebox2 {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="http://127.0.0.1:5500/index.html"><img src="images/icon.png" alt="logo" width="60px"></a>
+        </div>
+
+        <div class="headmedia">
+            <a href="https://www.facebook.com/anson.lim.418574" target="_blank"><img src="images/facebook.png"
+                    alt="Facebook" width="30px"></a>
+            <a href="https://web.whatsapp.com/"><img src="images/whatsapp.png" alt="WhatsApp" width="30px"></a>
+            <a href="https://www.instagram.com/anson_l13/" target="_blank"><img src="images/instagram.png"
+                    alt="Instagram" width="30px"></a>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="profilepic">
+            <img class="propic" src="images/pf.png" alt="Profile Pic" width="100px">
+            <h2>Anson Lim</h2>
+            <h3>Web Publishing</h3>
+            <p>Hello! I'm Anson Lim, an art student. I love drawing illustrations. Welcome to my personal portfolio.
+            </p>
+        </div>
+    </div>
+
+    <div class="exercisecontainer">
+        <div class="exercisebox">
+            <div class="exercisecontent">
+                <img class="calander" src="images/calendar.png" alt="calander" width="100%">
+                <div>Week 1</div>
+            </div>
+            <div class="exerciselink">
+                <div>
+                    <p><a href="http://127.0.0.1:5500/week2/button.html" target="_blank">Exercise 1</a></p>
+                </div>
+                <div>
+                    <p><a href="http://127.0.0.1:5500/week2/self-intro.html" target="_blank">Exercise 2</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="exercisebox">
+            <div class="exercisecontent">
+                <img class="calander" src="images/calendar.png" alt="calander" width="100%">
+                <div>Week 2</div>
+            </div>
+            <div class="exerciselink">
+                <div>
+                    <p><a href="http://127.0.0.1:5500/week2/button.html" target="_blank">Exercise 1</a></p>
+                </div>
+                <div>
+                    <p><a href="http://127.0.0.1:5500/week2/self-intro.html" target="_blank">Exercise 2</a></p>
+                </div>
+                <div>
+                    <p><a href="http://127.0.0.1:5500/week2/artist.html" target="_blank">Exercise 3</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="exercisebox">
+            <div class="exercisecontent">
+                <img class="calander" src="images/calendar.png" alt="calander" width="100%">
+                <div>Week 3</div>
+            </div>
+            <div class="exerciselink">
+                <div>
+                    <p><a href="http://127.0.0.1:5500/week3/flexbox1.html" target="_blank">Exercise 1</a></p>
+                </div>
+                <div>
+                    <p><a href="http://127.0.0.1:5500/week3/flexbox2.html" target="_blank">Exercise 2</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercisecontainer">
+        <div class="exercisebox2">
+            <div class="exercisecontent">
+                <img class="calander" src="images/calendar.png" alt="calander" width="100%">
+                <div>Week 4</div>
+            </div>
+            <div class="exerciselink">
+                <div>
+                    <p><a href="http://127.0.0.1:5500/week4/menu.html" target="_blank">Exercise 1</a></p>
+                </div>
+                <div>
+                    <p><a href="http://127.0.0.1:5500/week4/home.html" target="_blank">Exercise 2</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="socialfoot">
+            <a href="https://www.facebook.com/anson.lim.418574" target="_blank"><img src="images/facebook.png"
+                    alt="Facebook" width="30px"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"
+                    width="30px"></a>
+            <a href="https://www.instagram.com/anson_l13/" target="_blank"><img src="images/instagram.png"
+                    alt="Instagram" width="30px"></a>
+        </div>
+        <div class="footword">
+            <p>@ 2024 Anson Lim. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
