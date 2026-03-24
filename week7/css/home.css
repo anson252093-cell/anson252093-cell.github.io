@@ -1,0 +1,278 @@
+ * {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+ }
+
+ div.body_container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 40px;
+     padding: 30px 20px 30px 20px;
+
+ }
+
+ div.para {
+     width: 40%;
+ }
+
+ h1.navigate {
+     font-size: 60px;
+ }
+
+ button.book {
+     color: white;
+     background-color: black;
+     border-radius: 10px;
+     padding: 20px 30px 20px 30px;
+     font-size: 20px;
+
+ }
+
+ div.footer {
+     display: flex;
+     gap: 20px;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 30px;
+     padding: 0px 20px 0px 20px;
+     max-width: 100%;
+     filter: grayscale(1);
+
+ }
+
+ p.menubar {
+     display: none;
+     font-size: 40px;
+ }
+
+ div.mediapic {
+     display: none;
+ }
+
+ div.illustration {
+     width: 60%;
+ }
+
+ div.service {
+     display: flex;
+     align-items: center;
+ }
+
+ h2.serv {
+     background-color: rgb(185, 255, 102);
+     border-radius: 7px;
+     color: black;
+     padding: 0px 7px 0px 7px;
+     font-size: 40px;
+ }
+
+ p.serviceinfo {
+     font-size: 18px;
+     padding: 40px;
+ }
+
+ div.servicecard {
+     display: flex;
+     justify-content: space-between;
+     gap: 40px;
+     padding: 20px 0px;
+ }
+
+ div.cardborder {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     border-radius: 45px;
+     border: 1px solid black;
+     width: 50%;
+     padding: 15px;
+ }
+
+ div.bordergrey {
+     background-color: rgb(243, 243, 243);
+     box-shadow: 0px 5px;
+
+ }
+
+ div.bordergreen {
+     background-color: rgb(185, 255, 102);
+     box-shadow: 0px 5px;
+ }
+
+ div.borderblack {
+     background-color: rgb(25, 26, 35);
+     box-shadow: 0px 5px;
+ }
+
+
+ div.cardcontent {
+     display: flex;
+     flex-direction: column;
+     width: 50%;
+ }
+
+ h3 {
+     align-items: center;
+     padding-bottom: 40px;
+     font-weight: 500;
+     font-size: 25px;
+ }
+
+ div.contentbody {
+     display: flex;
+     width: 100%;
+ }
+
+ div.arror {
+     align-items: center;
+     display: flex;
+ }
+
+ span.textborder {
+     padding: 0px 7px 0px 7px;
+     border-radius: 7px;
+ }
+
+ span.h3green {
+     background-color: rgb(185, 255, 102);
+
+     color: black;
+
+ }
+
+ span.h3white {
+     background-color: white;
+
+ }
+
+ p.learn {
+     padding: 15px;
+     font-weight: 400;
+
+ }
+
+ p.learnw {
+     color: white;
+     padding: 15px;
+     font-weight: 400;
+ }
+
+ div.letmake_container {
+     display: flex;
+     padding-top: 20px;
+
+ }
+
+ div.letmakeborder {
+     border-radius: 45px;
+     background-color: rgb(243, 243, 243);
+     align-items: center;
+     justify-content: space-evenly;
+     display: flex;
+     padding: 15px;
+     width: 100%;
+ }
+
+ div.letmakecontent {
+     width: 50%;
+ }
+
+ @media screen and (max-width: 1380px) {
+     img.hamburgerbar {
+         display: block;
+     }
+
+     div.menu_container {
+         display: none;
+
+     }
+
+
+ }
+
+
+ @media screen and (max-width: 900px) {
+     div.servicecard {
+         flex-wrap: wrap;
+         display: flex;
+
+
+     }
+
+     div.cardborder {
+         width: 100%;
+         align-items: flex-end;
+         margin: auto;
+     }
+
+
+
+     body {
+         padding: 10px;
+     }
+ }
+
+ @media screen and (max-width: 700px) {
+     div.para {
+         text-align: left;
+         width: 100%;
+     }
+
+     div.mediapic {
+         display: block;
+         width: 100%;
+     }
+
+     button.book {
+         width: 100%;
+     }
+
+     div.illustration {
+         display: none;
+     }
+
+     div.body_container {
+
+         flex-direction: column-reverse;
+     }
+
+     div.footer {
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 15px;
+         width: calc(16% - 12.5px)
+     }
+
+     div.service {
+         flex-direction: column;
+     }
+
+
+     div.contentpic {
+         width: 30%;
+     }
+
+
+     p.learn {
+         display: none;
+     }
+
+     p.learnw {
+         display: none;
+     }
+
+     h1.navigate {
+         font-size: 45px;
+     }
+
+     div.letmakecontent {
+         width: 100%;
+         padding: 20px;
+     }
+
+     div.letmakeill {
+         display: none;
+     }
+ }
