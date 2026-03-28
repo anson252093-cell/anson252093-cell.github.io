@@ -3,6 +3,12 @@
     body {
         font-family: "Space Grotesk";
         padding: 30px 100px 30px 100px;
+        font-size: 15px;
+    }
+
+    #container {
+        max-width: 1280px;
+        margin: auto;
     }
 
     div.header {
@@ -10,7 +16,6 @@
         gap: 10px;
         justify-content: space-between;
         align-items: center;
-        padding: 0px 20px 0px 20px;
         font-size: 20px;
     }
 
@@ -28,6 +33,7 @@
         display: flex;
         gap: 60px;
         align-items: center;
+        font-size: 16px;
     }
 
     button.request {
@@ -36,11 +42,129 @@
         border: 1px solid black;
         border-radius: 10px;
         padding: 20px 30px 20px 30px;
-        font-size: 20px;
 
     }
 
     p {
         font-size: 16px;
+
+    }
+
+
+    div.footerborder {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 45px 45px 0px 0px;
+    }
+
+    div.footerbg {
+        background-color: rgba(25, 26, 35, 1);
+        padding: 40px;
+    }
+
+    div.footercontentbg {
+        background-color: rgba(25, 26, 35, 1);
+        padding: 0px 40px;
+    }
+
+    div.footerlogo {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    div.footer_menu {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        text-decoration: underline;
+        color: white;
+        gap: 40px;
+
+    }
+
+    div.social_icon {
+        display: flex;
+        gap: 20px;
+    }
+
+    h1.white {
+        color: white;
+    }
+
+    div.footercontent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    div.buttonborder {
+        display: flex;
+        background-color: rgb(41, 42, 50);
+        padding: 60px 40px;
+        border-radius: 20px;
+        width: 55%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    div.contactus {
+        padding: 0px 7px 0px 7px;
+        border-radius: 7px;
+        background-color: rgb(185, 255, 102);
+        color: rgb(25, 26, 35, 1);
+
+    }
+
+    div.contactinfo {
+        color: white;
+        width: 30%;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.email {
+        color: white;
+        border-radius: 10px;
+        border: 1px solid white;
+        padding: 20px 35px 20px 35px;
+        width: 60%;
+
+    }
+
+    div.subcribe {
+        padding: 20px 35px;
+        border: 1px solid;
+        color: black;
+        background-color: rgb(185, 255, 102);
+        border-radius: 10px;
+        width: 40%;
+        text-align: center;
+    }
+
+    div.allright {
+        display: flex;
+        gap: 40px;
+        color: white;
+        padding: 40px 0px;
+        margin-top: 20px;
+        border-top: 1px solid white;
+        background-color: rgb(25, 26, 35, 1);
+        ;
+    }
+
+    div.privacy {
+        text-decoration: underline;
+    }
+
+    div.allrightbd {
+        background-color: rgba(25, 26, 35, 1);
+        padding: 0px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
     }

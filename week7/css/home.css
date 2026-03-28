@@ -9,7 +9,7 @@
      justify-content: space-between;
      align-items: center;
      font-size: 40px;
-     padding: 30px 20px 30px 20px;
+     padding: 30px 0px;
 
  }
 
@@ -19,6 +19,11 @@
 
  h1.navigate {
      font-size: 60px;
+     padding-bottom: 35px;
+ }
+
+ p.our {
+     padding-bottom: 35px;
  }
 
  button.book {
@@ -30,16 +35,18 @@
 
  }
 
- div.footer {
+ div.brand_container {
      display: flex;
      gap: 20px;
      justify-content: space-between;
      align-items: center;
      margin-top: 30px;
-     padding: 0px 20px 0px 20px;
      max-width: 100%;
      filter: grayscale(1);
+ }
 
+ div.brand {
+     width: calc(16.66% - 16.66px);
  }
 
  p.menubar {
@@ -49,10 +56,6 @@
 
  div.mediapic {
      display: none;
- }
-
- div.illustration {
-     width: 60%;
  }
 
  div.service {
@@ -161,7 +164,7 @@
 
  div.letmake_container {
      display: flex;
-     padding-top: 20px;
+     padding: 20px 0px 20px 0px;
 
  }
 
@@ -179,7 +182,7 @@
      width: 50%;
  }
 
- @media screen and (max-width: 1380px) {
+ @media screen and (max-width: 1180px) {
      img.hamburgerbar {
          display: block;
      }
@@ -189,11 +192,34 @@
 
      }
 
+     div.footerborder {
+         flex-direction: column;
+     }
 
+     div.footercontent {
+         flex-direction: column;
+
+     }
+
+     div.buttonborder {
+         width: 100%
+     }
+
+     div.email {
+         width: 100%;
+     }
+
+     div.subcribe {
+         width: 100%;
+     }
  }
 
 
  @media screen and (max-width: 900px) {
+     div.brand {
+         width: calc(33.3% - 6.67px);
+     }
+
      div.servicecard {
          flex-wrap: wrap;
          display: flex;
@@ -210,7 +236,15 @@
 
 
      body {
-         padding: 10px;
+         padding: 20px;
+     }
+
+     div.buttonborder {
+         flex-wrap: wrap;
+     }
+
+     div.social_icon {
+         display: none;
      }
  }
 
@@ -238,12 +272,6 @@
          flex-direction: column-reverse;
      }
 
-     div.footer {
-         flex-wrap: wrap;
-         justify-content: center;
-         gap: 15px;
-         width: calc(16% - 12.5px)
-     }
 
      div.service {
          flex-direction: column;
