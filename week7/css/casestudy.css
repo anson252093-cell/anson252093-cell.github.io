@@ -83,6 +83,15 @@ div.card_container {
     margin: 30px 0px;
 }
 
+div.card_containermedia {
+    box-shadow: 0px 5px;
+    border-radius: 45px;
+    border: 1px solid black;
+    padding: 40px 60px;
+    margin: 30px 0px;
+    display: none;
+}
+
 div.card_bottom {
     display: flex;
     justify-content: space-between;
@@ -143,8 +152,9 @@ div.process_container {
 div.worker_container {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 30px;
     padding: 20px 0px 20px 0px;
+    justify-content: center;
 
 }
 
@@ -187,4 +197,48 @@ button.team {
     border-radius: 15px;
     padding: 20px 40px;
     justify-content: right;
+}
+
+@media screen and (max-width: 900px) {
+
+    div.case_container {
+        padding: 0px 20px;
+    }
+
+    div.card_container {
+        margin: 20px
+    }
+
+    div.case_border {
+        gap: 20px;
+
+    }
+
+    div.processgreen {
+        display: none
+    }
+
+    div.worker_border {
+        width: calc(50% - 15px);
+    }
+
+    div.buttonall {
+        padding: 0px 20px 0px 0px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    div.headandsub {
+        flex-direction: column;
+    }
+
+    p.subhead {
+        width: 100%;
+        text-align: center;
+    }
+
+    div.worker_border {
+        width: calc(100% - 30px);
+    }
 }
