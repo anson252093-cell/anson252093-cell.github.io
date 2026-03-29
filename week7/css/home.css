@@ -37,10 +37,11 @@
 
  div.brand_container {
      display: flex;
+     flex-wrap: wrap;
      gap: 20px;
      justify-content: space-between;
      align-items: center;
-     margin-top: 30px;
+     padding: 40px 20px;
      max-width: 100%;
      filter: grayscale(1);
  }
@@ -61,6 +62,7 @@
  div.service {
      display: flex;
      align-items: center;
+     gap: 20px;
  }
 
  h2.serv {
@@ -73,7 +75,7 @@
 
  p.serviceinfo {
      font-size: 18px;
-     padding: 40px;
+     gap: 20px;
  }
 
  div.servicecard {
@@ -182,49 +184,18 @@
      width: 50%;
  }
 
- @media screen and (max-width: 1180px) {
-     img.hamburgerbar {
-         display: block;
-     }
-
-     div.menu_container {
-         display: none;
-
-     }
-
-     div.footerborder {
-         flex-direction: column;
-     }
-
-     div.footercontent {
-         flex-direction: column;
-
-     }
-
-     div.buttonborder {
-         width: 100%
-     }
-
-     div.email {
-         width: 100%;
-     }
-
-     div.subcribe {
-         width: 100%;
-     }
- }
-
-
  @media screen and (max-width: 900px) {
+
+
      div.brand {
-         width: calc(33.3% - 6.67px);
+         width: calc(33.33% - 13.33px);
      }
+
 
      div.servicecard {
          flex-wrap: wrap;
          display: flex;
-
-
+         padding: 20px;
      }
 
      div.cardborder {
@@ -233,22 +204,41 @@
          margin: auto;
      }
 
-
-
      body {
+         padding: 0px;
+     }
+
+     div.body_container {
+         padding: 0px 20px;
+     }
+
+     div.brand_container {
+         padding: 40px 50px;
+     }
+
+     div.service {
+         padding: 40px 20px;
+         gap: 20px;
+     }
+
+     div.letmake_container {
          padding: 20px;
      }
 
-     div.buttonborder {
-         flex-wrap: wrap;
-     }
-
-     div.social_icon {
-         display: none;
-     }
  }
 
  @media screen and (max-width: 700px) {
+
+     div.brand {
+         width: calc(50% - 10px);
+     }
+
+     h1.navigate {
+         font-size: 45px;
+         padding: 35px 0px 35px 0px;
+
+     }
+
      div.para {
          text-align: left;
          width: 100%;
@@ -275,6 +265,7 @@
 
      div.service {
          flex-direction: column;
+         padding: 0px 20px;
      }
 
 
@@ -289,10 +280,6 @@
 
      p.learnw {
          display: none;
-     }
-
-     h1.navigate {
-         font-size: 45px;
      }
 
      div.letmakecontent {

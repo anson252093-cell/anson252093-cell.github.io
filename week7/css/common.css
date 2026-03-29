@@ -61,7 +61,7 @@
 
     div.footerbg {
         background-color: rgba(25, 26, 35, 1);
-        padding: 40px;
+        padding: 40px 40px 20px 40px;
     }
 
     div.footercontentbg {
@@ -98,12 +98,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 20px 40px 40px 40px;
     }
 
     div.buttonborder {
         display: flex;
         background-color: rgb(41, 42, 50);
-        padding: 60px 40px;
+        padding: 55px 40px;
         border-radius: 20px;
         width: 55%;
         align-items: center;
@@ -146,15 +147,15 @@
     }
 
     div.allright {
-        display: flex;
-        gap: 40px;
+
         color: white;
-        padding: 40px 0px;
-        margin-top: 20px;
+
         border-top: 1px solid white;
-        background-color: rgb(25, 26, 35, 1);
-        ;
+        padding: 25px 0px;
+        display: flex;
     }
+
+    ;
 
     div.privacy {
         text-decoration: underline;
@@ -168,3 +169,88 @@
         justify-content: space-between;
 
     }
+
+    div.social_iconbotton {
+        display: none;
+    }
+
+    @media screen and (max-width: 1180px) {
+        img.hamburgerbar {
+            display: block;
+        }
+
+        div.menu_container {
+            display: none;
+
+        }
+
+        div.footerborder {
+            flex-direction: column;
+        }
+
+        div.footercontent {
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            gap: 40px
+        }
+
+        div.buttonborder {
+            width: 100%
+        }
+
+        div.email {
+            width: 100%;
+            text-align: left;
+        }
+
+        div.subcribe {
+            width: 100%;
+        }
+
+        div.contactinfo {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        div.header {
+            padding: 0px 20px;
+        }
+
+        body {
+            padding: 0px;
+        }
+
+        div.buttonborder {
+            flex-wrap: wrap;
+        }
+
+        div.social_icon {
+            display: none;
+        }
+
+        div.footerborder {
+            border-radius: 0px;
+        }
+
+        div.footer_menu {
+            flex-direction: column;
+        }
+
+        div.social_iconbotton {
+            display: block;
+            display: flex;
+            gap: 20px;
+        }
+
+
+        div.allright {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    @media screen and (max-width: 700px) {}
