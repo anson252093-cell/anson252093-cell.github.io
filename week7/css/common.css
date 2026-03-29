@@ -2,7 +2,7 @@
 
     body {
         font-family: "Space Grotesk";
-        padding: 30px 100px 30px 100px;
+        padding: 30px 100px 0px 100px;
         font-size: 15px;
     }
 
@@ -50,6 +50,9 @@
 
     }
 
+    div.footer {
+        padding-top: 20px;
+    }
 
     div.footerborder {
         display: flex;

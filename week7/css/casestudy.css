@@ -1,7 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 div.headandsub {
     display: flex;
     align-items: center;
     gap: 20px;
+    padding: 40px 0px;
 }
 
 h2.title {
@@ -50,6 +57,7 @@ div.case_border {
     display: flex;
     padding: 30px;
     border-radius: 45px;
+
 }
 
 div.learn_more {
@@ -67,26 +75,35 @@ div.content_title {
     font-weight: medium;
 }
 
-div.process_border {
-    display: flex;
+div.card_container {
+    box-shadow: 0px 5px;
     border-radius: 45px;
     border: 1px solid black;
-    width: 100%;
-    justify-content: space-between;
-    box-shadow: 0px 5px;
     padding: 40px 60px;
+    margin: 30px 0px;
+}
+
+div.card_bottom {
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid black;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+div.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 div.processgreen {
     background-color: rgb(185, 255, 102);
-    align-items: center;
 
 }
 
 div.processgrey {
     background-color: rgb(243, 243, 243);
-    align-items: center;
 
 }
 
@@ -106,6 +123,10 @@ div.cardborder {
     padding: 15px;
 }
 
+div.process_content {
+    padding-top: 30px;
+}
+
 div.bordergrey {
     background-color: rgb(243, 243, 243);
     box-shadow: 0px 5px;
@@ -115,9 +136,55 @@ div.bordergrey {
 div.process_container {
     display: flex;
     justify-content: space-between;
+    padding: 25px 0px;
+}
+
+
+div.worker_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px 0px 20px 0px;
 
 }
 
-div.process_container {
-    padding: 25px 0px;
+div.worker_border {
+    width: calc(33.33% - 20px);
+    border-radius: 45px;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+div.workerinfo {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+div.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div.worker_name {
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+}
+
+div.worker_content {
+    padding-top: 20px;
+}
+
+div.buttonall {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button.team {
+    color: white;
+    background-color: rgb(25, 26, 35);
+    border-radius: 15px;
+    padding: 20px 40px;
+    justify-content: right;
 }
