@@ -8,8 +8,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-        body {
+        * {
             margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
             background-color: aqua;
             color: rgb(11, 45, 114);
             background-image: url(images/background3.jpeg);
@@ -38,7 +43,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-
+            gap: 10px;
         }
 
         img.propic {
@@ -46,9 +51,15 @@
             padding: 30px;
         }
 
+        p {
+            text-align: center;
+        }
+
         div.exercisecontainer {
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
         }
 
         div.exercisebox {
@@ -57,22 +68,10 @@
             align-items: center;
             flex-direction: column;
             border-radius: 20px;
-            width: 32%;
-            margin: 20px;
+            width: calc(33.33% - 13.33px);
             padding: 10px;
+            gap: 10px;
         }
-
-        div.exercisebox2 {
-            display: flex;
-            background-color: rgba(246, 231, 188, 0.721);
-            align-items: center;
-            flex-direction: column;
-            border-radius: 20px;
-            width: 100%;
-            margin: 20px;
-            padding: 10px;
-        }
-
 
         div.exercisecontent {
             display: flex;
@@ -86,8 +85,16 @@
             max-width: 30px;
         }
 
+        div.exerciselink {
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
         a {
             text-decoration: none;
+            color: rgb(11, 45, 114);
+            ;
         }
 
         div.wkbox {
@@ -122,27 +129,25 @@
             margin: auto;
         }
 
-        h2 {
-            padding-left: 10px;
-        }
-
         div.socialfoot {
             gap: 10px;
         }
 
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1100px) {
+            div.exercisebox {
+                width: calc(50% - 10px)
+            }
+        }
+
+        @media screen and (max-width: 750px) {
             div.exercisecontainer {
                 flex-wrap: wrap;
-                flex-direction: column;
                 align-items: center;
+
             }
 
             div.exercisebox {
-                width: 90%;
-            }
-
-            div.exercisebox2 {
-                width: 90%;
+                width: calc(100% - 20px);
             }
         }
     </style>
@@ -182,13 +187,10 @@
             </div>
             <div class="exerciselink">
                 <div>
-                    <p><a href="http://anson252093-cell.github.io/week1
-/exe1.html
-" target="_blank">Exercise 1</a></p>
+                    <p><a href="http://anson252093-cell.github.io/week1/exe1.html" target="_blank">Exercise 1</a></p>
                 </div>
                 <div>
-                    <p><a href="http://anson252093-cell.github.io/week1
-/exe2.html" target="_blank">Exercise 2</a></p>
+                    <p><a href="http://anson252093-cell.github.io/week1/exe2.html" target="_blank">Exercise 2</a></p>
                 </div>
             </div>
         </div>
@@ -199,16 +201,14 @@
             </div>
             <div class="exerciselink">
                 <div>
-                    <p><a href="http://anson252093-cell.github.io/week2
-/button.html" target="_blank">Exercise 1</a></p>
+                    <p><a href="http://anson252093-cell.github.io/week2/button.html" target="_blank">Exercise 1</a></p>
                 </div>
                 <div>
-                    <p><a href="http://anson252093-cell.github.io/week2
-/self-intro.html" target="_blank">Exercise 2</a></p>
+                    <p><a href="http://anson252093-cell.github.io/week2/self-intro.html" target="_blank">Exercise 2</a>
+                    </p>
                 </div>
                 <div>
-                    <p><a href="http://anson252093-cell.github.io/week2
-/artist.html" target="_blank">Exercise 3</a></p>
+                    <p><a href="http://anson252093-cell.github.io/week2/artist.html" target="_blank">Exercise 3</a></p>
                 </div>
             </div>
         </div>
@@ -219,42 +219,44 @@
             </div>
             <div class="exerciselink">
                 <div>
-                    <p><a href="http://anson252093-cell.github.io/week3
-/flexbox1.html" target="_blank">Exercise 1</a></p>
+                    <p><a href="http://anson252093-cell.github.io/week3/flexbox1.html" target="_blank">Exercise 1</a>
+                    </p>
                 </div>
                 <div>
-                    <p><a href="http://anson252093-cell.github.io/week3
-/flexbox2.html" target="_blank">Exercise 2</a></p>
+                    <p><a href="http://anson252093-cell.github.io/week3/flexbox2.html" target="_blank">Exercise 2</a>
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="exercisecontainer">
-        <div class="exercisebox2">
+        <div class="exercisebox">
             <div class="exercisecontent">
                 <img class="calander" src="images/calendar.png" alt="calander" width="100%">
                 <div>Week 4</div>
             </div>
             <div class="exerciselink">
                 <div>
-                    <p><a href="http://anson252093-cell.github.io/week4
-/menu.html" target="_blank">Exercise 1</a></p>
+                    <p><a href="https://anson252093-cell.github.io/week4/menu.html" target="_blank">Exercise 1</a></p>
                 </div>
                 <div>
-                    <p><a href="http://anson252093-cell.github.io/week4
-/home.html
-" target="_blank">Exercise 2</a></p>
+                    <p><a href="https://anson252093-cell.github.io/week4/home.html" target="_blank">Exercise 2</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="exercisebox">
+            <div class="exercisecontent">
+                <img class="calander" src="images/calendar.png" alt="calander" width="100%">
+                <div>Week 7</div>
+            </div>
+            <div class="exerciselink">
+                <div>
+                    <p><a href="http://anson252093-cell.github.io/week1/exe1.html" target="_blank">Exercise 1</a></p>
+                </div>
+                <div>
+                    <p><a href="http://anson252093-cell.github.io/week1/exe2.html" target="_blank">Exercise 2</a></p>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
-
 
     <div class="footer">
         <div class="socialfoot">
