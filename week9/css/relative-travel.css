@@ -7,8 +7,74 @@
 /* === rootvariable === */
 :root {
     --border-radius: 10px;
-    --background-color: rgb(215, 215, 215);
+    --background-color: rgb(209, 209, 209);
     --color-heading: rgb(0, 0, 0);
     --color-description: rgb(78, 78, 78);
+    --border-radius: 10px;
 
+}
+
+body {
+    margin: 10px 75px;
+    background-image: url(images/bg1.jpg);
+    background-size: cover;
+}
+
+div.travel {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+
+}
+
+div.travelbox {
+    gap: 20px;
+    padding: 25px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    margin: 0px 50px;
+    border-radius: var(--border-radius);
+    position: relative;
+}
+
+div.image {
+    border-radius: var(--border-radius);
+}
+
+div.event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.absolutebox {
+    position: absolute;
+    right: -30px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    bottom: 60px;
+}
+
+img.city {
+    border-radius: 50px;
+}
+
+span {
+    color: blueviolet;
+    font-weight: 300;
+}
+
+p.completed {
+    font-weight: 500;
+}
+
+div.citytext {
+    gap: 10px;
+    display: flex;
+    flex-direction: column
 }
