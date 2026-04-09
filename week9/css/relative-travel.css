@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* === rootvariable === */
+:root {
+    --border-radius: 10px;
+    --background-color: rgb(215, 215, 215);
+    --color-heading: rgb(0, 0, 0);
+    --color-description: rgb(78, 78, 78);
+
+}
