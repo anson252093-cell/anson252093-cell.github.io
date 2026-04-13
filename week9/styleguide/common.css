@@ -8,7 +8,8 @@
 
 /* === rootvariable === */
 :root {
-
+    --font-color-primary: #222222;
+    --font-color-secondary: #444444;
     /*Desktop font size*/
     --font-family: "Lexend";
     --number-font-family: "Oswald";
@@ -70,14 +71,63 @@
     --mobile-h6-line-height: 22.4px;
 
     /*buttton*/
-    --button-font-size: 16px;
-    --button-header-padding: 20px 30px;
-    --button-padding: 22px 34px 24px 34px;
-    --button-border-radius: 6px;
-    --icon-width: 16px;
+    --btn-primary-bg: #FCC943;
+    --btn-primary-text: #222222;
+    --btn-primary-padding: 22px 34px 24px 34px;
+    --btn-secondary-padding: 20px 30px;
+    --btn-font-size: 16px;
+    --btn-border-radius: 6px;
+    --btn-icon-width: 16px;
+    --btn-primary-color: #222222;
+    --btn-secondary-color: #FFFFFF;
+    --btn-header-button: #ECF9EE;
+    --btn-header-hoverbutton: #F2F0FF;
+
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--font-color-primary);
+}
+
+div.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 80px;
+    align-items: center;
+}
+
+div.header_menu {
+    display: flex;
+    gap: 30px;
+    font-size: 17px;
+}
+
+div.header_btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
 
 
+button.enrol {
+    font-size: var(--btn-font-size);
+    padding: var(--btn-secondary-padding);
+    border-radius: var(--btn-border-radius);
+    background-color: var(--btn-header-button);
+    border: 0px;
+    text-decoration: none;
+    color: var(--btn-primary-color)
+}
 
+a.btn_header_color {
+    text-decoration: none;
+    color: var(--btn-primary-color);
+}
 
-
+div.header_btn a::after {
+    content: url("../images/button_icon.png");
+    display: inline-block;
+    width: 17px;
+    padding-left: 12px;
 }
