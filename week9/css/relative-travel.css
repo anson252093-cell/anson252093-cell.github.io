@@ -7,7 +7,7 @@
 /* === rootvariable === */
 :root {
     --border-radius: 10px;
-    --background-color: rgb(209, 209, 209);
+    --background-color: rgb(255, 255, 255);
     --color-heading: rgb(0, 0, 0);
     --color-description: rgb(78, 78, 78);
     --border-radius: 10px;
@@ -16,14 +16,14 @@
 
 body {
     margin: 10px 75px;
-    background-image: url(images/bg1.jpg);
+    background-image: url("images/background.jpg");
     background-size: cover;
 }
 
 div.travel {
     display: flex;
     gap: 50px;
-    justify-content: center;
+    justify-content: space-around;
 
 }
 
@@ -33,13 +33,13 @@ div.travelbox {
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
-    max-width: 30%;
-    margin: 0px 50px;
+    width: 45%;
     border-radius: var(--border-radius);
     position: relative;
+    box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
-div.image {
+img.image {
     border-radius: var(--border-radius);
 }
 
@@ -51,13 +51,16 @@ div.event {
 
 div.absolutebox {
     position: absolute;
-    right: -30px;
-    width: 200px;
-    background-color: rgb(255, 255, 255);
+    right: -10%;
+    background-color: var(--background-color);
     display: flex;
     padding: 10px;
     gap: 10px;
     bottom: 60px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.3);
+    width: 50%;
+
 }
 
 img.city {
@@ -70,11 +73,29 @@ span {
 }
 
 p.completed {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 div.citytext {
     gap: 10px;
     display: flex;
     flex-direction: column
+}
+
+div.people {
+    gap: 10px;
+    display: flex;
+
+}
+
+@media screen and (max-width: 1075px) {
+    div.travel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.travelbox {
+        width: 100%;
+    }
 }
