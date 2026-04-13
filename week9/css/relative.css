@@ -50,12 +50,12 @@ div.catbox {
     margin: 0px 20px;
 }
 
-div.catborder {
-    width: calc(33.3% - 13.33px)
+img {
+    border-radius: var(--border-radius);
 }
 
-div.description {
-    border-bottom: 1px solid grey
+div.catborder {
+    width: calc(33.3% - 13.33px)
 }
 
 div.relative {
@@ -68,6 +68,7 @@ div.relative {
     margin: 25px;
     bottom: 60px;
     text-align: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.285);
 }
 
 div.description {
