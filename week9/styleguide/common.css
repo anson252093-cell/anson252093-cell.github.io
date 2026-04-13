@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* === rootvariable === */
+:root {
+
+    /*Desktop font size*/
+    --font-family: "Lexend";
+    --number-font-family: "Oswald";
+    --desktop-h1-font-size: 60px;
+    --desktop-h1-line-height: 62.4px;
+
+    --desktop-h2-font-size: 42px;
+    --desktop-h2-line-height: 50.7px;
+
+    --desktop-h3-font-size: 36px;
+    --desktop-h3-line-height: 46.8px;
+
+    --desktop-h4-font-size: 24px;
+    --desktop-h4-line-height: 30.8px;
+
+    --desktop-h5-font-size: 20px;
+    --desktop-h5-line-height: 28px;
+
+    --desktop-h6-font-size: 16px;
+    --desktop-h6-line-height: 22.4px;
+    --line-weight: 500;
+
+    /*tablet font size*/
+    --tablet-h1-font-size: 50px;
+    --tablet-h1-line-height: 65px;
+
+    --tablet-h2-font-size: 42px;
+    --tablet-h2-line-height: 54.6px;
+
+    --tablet-h3-font-size: 36px;
+    --tablet-h3-line-height: 46.8px;
+
+    --tablet-h4-font-size: 24px;
+    --tablet-h4-line-height: 31.2px;
+
+    --tablet-h5-font-size: 20px;
+    --tablet-h5-line-height: 28px;
+
+    --tablet-h6-font-size: 16px;
+    --tablet-h6-line-height: 22.4px;
+
+    /*mobile font size*/
+    --mobile-h1-font-size: 48px;
+    --mobile-h1-line-height: 62.4px;
+
+    --mobile-h2-font-size: 39px;
+    --mobile-h2-line-height: 50.7px;
+
+    --mobile-h3-font-size: 24px;
+    --mobile-h3-line-height: 46.8px;
+
+    --mobile-h4-font-size: 22px;
+    --mobile-h4-line-height: 30.8px;
+
+    --mobile-h5-font-size: 20px;
+    --mobile-h5-line-height: 28px;
+
+    --mobile-h6-font-size: 16px;
+    --mobile-h6-line-height: 22.4px;
+
+    /*buttton*/
+    --button-font-size: 16px;
+    --button-header-padding: 20px 30px;
+    --button-padding: 22px 34px 24px 34px;
+    --button-border-radius: 6px;
+    --icon-width: 16px;
+
+
+
+
+
+}
