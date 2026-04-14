@@ -77,6 +77,14 @@
     --mobile-h6-font-size: 16px;
     --mobile-h6-line-height: 22.4px;
 
+    /*body desktop*/
+    --font-body1-desktop: 36px;
+    --font-body2-desktop: 34px;
+    --font-body3-desktop: 24px;
+    --font-body4-desktop: 17px;
+    --font-body5-desktop: 16px;
+    --font-body6-desktop: 14px;
+    --font-body7-desktop: 12px;
     /*buttton*/
     --btn-primary-bg: #27C4E5;
     --btn-secondary-bg: #FCC943;
@@ -97,8 +105,8 @@
     --fill-padding: 16px;
     --fill-border-radius: 8px;
     --fill-border-bottom: 1px solid #212121;
-
 }
+
 
 body {
     font-family: var(--font-family);
@@ -223,8 +231,18 @@ div.button_box {
     flex-wrap: wrap;
 }
 
-.button_box>hover1 {
+div.button_box>div.hover1:hover {
     color: var(--btn-primary-color);
+    background-color: var(--btn-secondary-bg);
+}
+
+div.button_box>div.hover2:hover {
+    color: var(--btn-secondary-text);
+    background-color: var(--btn-tertiary-bg);
+}
+
+div.button_box>div.hover3:hover {
+    color: var(--btn-primary-text);
     background-color: var(--btn-secondary-bg);
 }
 
@@ -282,7 +300,7 @@ div.form {
 
 input[type="text"] {
     border: none;
-    padding: var(--fill-padding);
+    padding: 16px 32px;
     width: 100%;
     margin: 10px 0px;
     font-size: var(--btn-font-size);
@@ -292,4 +310,14 @@ input[type="text"] {
 input[type="text"]:focus {
     outline: none;
     border-bottom: var(--fill-border-bottom);
+}
+
+div.form>button.next {
+    background-color: var(--btn-secondary-bg);
+    color: var(--btn-primary-text);
+    border: none;
+    padding: 48px 32px;
+    border-radius: var(--btn-border-radius);
+    font-size: var(--btn-font-size);
+    width: 100%;
 }
